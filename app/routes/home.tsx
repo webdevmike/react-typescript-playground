@@ -1,13 +1,31 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { Link } from "react-router";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "React TypeScript Playground" },
+    { name: "description", content: "Welcome to React TypeScript Playground!" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <>
+      <h1>React TypeScript Playground</h1>
+      <ul>
+        <li>
+          <Link to="/transfer-list">Transfer List</Link>
+        </li>
+        <li>
+          <Link to="/theme-provider">Theme Provider (Context API)</Link>
+        </li>
+        <li>
+          <Link to="/job-board">Job Board</Link>
+        </li>
+        <li>
+          <Link to="/use-fetch">Use Fetch Hook</Link>
+        </li>
+      </ul>
+    </>
+  );
 }
