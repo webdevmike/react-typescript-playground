@@ -6,4 +6,5 @@ export default [
   route("theme-provider", "routes/Theme/Theme.tsx"),
   route("job-board", "routes/JobBoard/JobBoard.tsx"),
   route("use-fetch", "routes/UseFetch/UseFetch.tsx"),
+  route("table-pagination", "routes/TablePagination/Table.tsx"),
 ] satisfies RouteConfig;
