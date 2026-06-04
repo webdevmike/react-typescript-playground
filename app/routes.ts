@@ -7,4 +7,5 @@ export default [
   route("job-board", "routes/JobBoard/JobBoard.tsx"),
   route("use-fetch", "routes/UseFetch/UseFetch.tsx"),
   route("table-pagination", "routes/TablePagination/Table.tsx"),
+  route("form-with-validation", "routes/FormWithValidation/Form.tsx"),
 ] satisfies RouteConfig;
