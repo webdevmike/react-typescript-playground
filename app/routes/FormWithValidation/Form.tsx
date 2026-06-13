@@ -31,12 +31,21 @@ const INITIAL_ERRORS: FormErrors = {
 export default function Form() {
   const [fields, setFields] = useState<FormFields>(INITIAL_FIELDS);
   const [errors, setErrors] = useState<FormErrors>(INITIAL_ERRORS);
+  const [submitInProgress, setSubmitInProgress] = useState(false);
 
   const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formIsValid = validateFields();
-    if (formIsValid) {
-      alert("success!");
+
+    try {
+      setSubmitInProgress(true);
+      const formIsValid = validateFields();
+      if (formIsValid) {
+        alert("success!");
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setSubmitInProgress(false);
     }
   };
 
@@ -168,7 +177,9 @@ export default function Form() {
           </div>
         </div>
         <div className={styles.buttons}>
-          <button type="submit">Send</button>
+          <button type="submit" disabled={submitInProgress}>
+            Send
+          </button>
           <button
             type="button"
             onClick={() => {
