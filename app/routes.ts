@@ -8,4 +8,5 @@ export default [
   route("use-fetch", "routes/UseFetch/UseFetch.tsx"),
   route("table-pagination", "routes/TablePagination/Table.tsx"),
   route("form-with-validation", "routes/FormWithValidation/Form.tsx"),
+  route("calc-hook-form", "routes/CalcHookForm/CalcForm.tsx"),
 ] satisfies RouteConfig;

@@ -31,6 +31,9 @@ export default function Home() {
         <li>
           <Link to="/use-fetch">Use Fetch Hook</Link>
         </li>
+        <li>
+          <Link to="/calc-hook-form">Calc Hook and Form</Link>
+        </li>
       </ul>
     </>
   );
