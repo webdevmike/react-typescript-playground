@@ -34,6 +34,9 @@ export default function Home() {
         <li>
           <Link to="/calc-hook-form">Calc Hook and Form</Link>
         </li>
+        <li>
+          <Link to="/undoable-counter">Undoable Counter</Link>
+        </li>
       </ul>
     </>
   );

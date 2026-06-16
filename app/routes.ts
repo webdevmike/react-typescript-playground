@@ -9,4 +9,5 @@ export default [
   route("table-pagination", "routes/TablePagination/Table.tsx"),
   route("form-with-validation", "routes/FormWithValidation/Form.tsx"),
   route("calc-hook-form", "routes/CalcHookForm/CalcForm.tsx"),
+  route("undoable-counter", "routes/UndoableCounter/UndoableCounter.tsx"),
 ] satisfies RouteConfig;
