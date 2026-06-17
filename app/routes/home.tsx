@@ -37,6 +37,9 @@ export default function Home() {
         <li>
           <Link to="/undoable-counter">Undoable Counter</Link>
         </li>
+        <li>
+          <Link to="/counter-use-reducer">Counter useReducer</Link>
+        </li>
       </ul>
     </>
   );
