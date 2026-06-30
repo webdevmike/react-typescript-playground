@@ -11,4 +11,7 @@ export default [
   route("calc-hook-form", "routes/CalcHookForm/CalcForm.tsx"),
   route("undoable-counter", "routes/UndoableCounter/UndoableCounter.tsx"),
   route("counter-use-reducer", "routes/CounterUseReducer/Counter.tsx"),
+  route("todo-use-state", "routes/TodoList/use-state/TodoList.tsx"),
+  route("todo-use-reducer", "routes/TodoList/use-reducer/TodoList.tsx"),
+  route("todo-context-reducer", "routes/TodoList/context-reducer/TodoPage.tsx"),
 ] satisfies RouteConfig;

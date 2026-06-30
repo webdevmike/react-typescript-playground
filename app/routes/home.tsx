@@ -40,6 +40,17 @@ export default function Home() {
         <li>
           <Link to="/counter-use-reducer">Counter useReducer</Link>
         </li>
+        <li>
+          <Link to="/todo-use-state">Todo List (useState)</Link>
+        </li>
+        <li>
+          <Link to="/todo-use-reducer">Todo List (useReducer)</Link>
+        </li>
+        <li>
+          <Link to="/todo-context-reducer">
+            Todo List (Context API + useReducer)
+          </Link>
+        </li>
       </ul>
     </>
   );
